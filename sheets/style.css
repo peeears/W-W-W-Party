@@ -1,0 +1,151 @@
+@font-face {
+  font-family: Bespoke;
+  src: url(../assets/Bespoke-113.otf);
+  font-family: ballinger-mono, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden !important;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: floralwhite;
+  text-align: center;
+  margin: 0;
+  line-height: 1;
+
+  /* font-family: "Cinzel", serif; */
+  /* font-family: Bespoke; */
+}
+
+h1 {
+  line-height: 1.5em;
+  font-size: 4em;
+  text-align: center;
+  /* display: flex; */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-family: Bespoke;
+  color: black;
+  /* mix-blend-mode: difference; */
+  /* font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; */
+  /* left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); */
+}
+
+#www {
+  width: auto;
+}
+
+#www:hover span {
+  display: none;
+}
+
+#www:hover:before {
+  content: "Word-Wide-Web";
+}
+
+img {
+  object-fit: cover;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+  height: auto;
+  margin-bottom: 1.5em;
+  mix-blend-mode: multiply;
+  z-index: -100;
+}
+
+.my-fun-class .vanillajs-table-data td:first-of-type {
+  display: none;
+}
+
+.remove-Time {
+  display: none;
+}
+
+.vanillajs-table-header td:first-of-type {
+  display: none;
+}
+
+.vanillajs-table td {
+  box-sizing: border-box;
+  width: 400px !important;
+  text-align: left;
+  text-align: left;
+  padding: 10px;
+}
+
+/* looptext */
+
+section.marquees {
+  font-family: Bespoke;
+  position: fixed;
+  margin: 0;
+  top: 10px;
+  left: 10px;
+  z-index: 100;
+}
+
+section.marquees.energy {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+
+.marquee {
+  font-size: 1.2em !important;
+  display: flex;
+  position: relative;
+  margin: 0;
+  /* overflow: hidden; */
+  white-space: nowrap;
+}
+.marquee.material {
+  color: hotpink;
+  width: 120vw;
+  height: 1em;
+}
+.marquee.energy {
+  color: skyblue;
+  width: 1em;
+  height: 120vh;
+}
+
+.marquee > .inner {
+  display: inline-block;
+  margin: 0;
+}
+.marquee.material > .inner {
+  padding-right: 1em;
+  width: auto;
+}
+.marquee.energy > .inner {
+  padding-bottom: 1em;
+  height: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: rgb(249, 164, 53);
+  }
+
+  h1 {
+    font-size: 3em;
+  }
+}

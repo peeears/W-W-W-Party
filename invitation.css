@@ -1,0 +1,102 @@
+@font-face {
+  font-family: Bespoke;
+  src: url(assets/Bespoke-113.otf);
+  font-family: ballinger-mono, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Bespoke;
+  /* font-family: ballinger-mono, sans-serif;
+  font-weight: 400;
+  font-style: normal; */
+  font-size: 1.2rem;
+  line-height: 150%;
+  overflow: hidden;
+  /* background-color: lightpink; */
+}
+
+iframe {
+  display: flex;
+  /* align-items: center;
+  justify-content: center; */
+  /* top: 25vh; */
+  /* left: 25vw; */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  overflow: hidden;
+}
+
+#www:hover span {
+  display: none;
+}
+
+#www:hover:before {
+  content: "W";
+}
+
+a {
+  /* outline: 1px solid black; */
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 15px;
+  background-color: hotpink;
+  color: white;
+  border-radius: 50pt;
+  z-index: 100;
+}
+
+.invite {
+  color: steelblue;
+}
+
+.bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.party {
+  color: hotpink;
+  /* background-color: lightpink; */
+  background-blend-mode: multiply;
+}
+
+.container {
+  pointer-events: none;
+  position: relative;
+  height: 100vh;
+  weight: 100vw;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.normal {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.deg {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  width: 100vh;
+  transform: translate(50%, -50%) rotate(90deg);
+  -webkit-transform: translate(50%, -50%) rotate(90deg);
+  -moz-transform: translate(50%, -50%) rotate(90deg);
+  -o-transform: translate(50%, -50%) rotate(90deg);
+  -ms-transform: translate(50%, -50%) rotate(90deg);
+}
